@@ -480,7 +480,8 @@ that the wired class extends, instead of the full implementation.
 Akka integration
 ----------------
 
-Macwire provides wiring for Akka actors through the `macrosAkka` module. [Here](https://github.com/adamw/macwire/blob/master/macrosAkkaTests/src/test/scala/com/softwaremill/macwire/akkasupport/demo/Demo.scala)
+Macwire provides wiring for Akka actors through the `macrosAkka` module. [Here](https://github.com/adamw/macwire/blob/master/
+Tests/src/test/scala/com/softwaremill/macwire/akkasupport/demo/Demo.scala)
 you can find example code. The module adds three macros `wireAnonymousActor`, `wireActor` and `wireProps`. These macros
 require an `ActorSystem` to be in scope as a dependency. This actor system is used to create the actors.
 
@@ -524,7 +525,7 @@ To use MacWire in your project, add a dependency:
 ````scala
 libraryDependencies += "com.softwaremill.macwire" %% "macros" % "2.3.0" % "provided"
 
-libraryDependencies += "com.softwaremill.macwire" %% "macrosAkka" % "2.3.0" % "provided"
+libraryDependencies += "com.softwaremill.macwire" %% "macrosakka" % "2.3.0" % "provided"
 
 libraryDependencies += "com.softwaremill.macwire" %% "util" % "2.3.0"
                   
